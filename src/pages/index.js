@@ -47,19 +47,37 @@ const IndexPage = () => {
         <div className="bg-white p-4 px-7">
           <h2 className="text-2xl text-center mb-4 font-medium">App Functionalities</h2>
           <p className="text-center mb-4">A simple workout tracker, developed by gym rats, for gym rats!</p>
-          <ul className="list-disc list-outside self-center">
-            <li>Record your workouts, record weight, reps, and RPE</li>
-            <li>Track all your body measurements (bodyweight, bicep size, etc.)</li>
-            <li>Plate calculator</li>
-            <li>Calculators
-              <ul className="list-disc list-inside">
-                <li>Powerlifting points</li>
-                <li>RPE/1RM</li>
-                <li>Plate calculator</li>
+          <div className='grid md:grid-cols-2'>
+            <div className="ml-auto mr-auto">
+              <ul className="list-disc list-inside m-4">
+                Workout History
+                <li>Record your sets, weight, reps and RPE</li>
+                <li>Use KG or LBS</li>
+                <li>Add custom exercises  </li>
+                <li>Rest timer</li>
+                <li>Backup system</li>
+                <li>Simple design</li>
               </ul>
-            </li>
-            <li>Timers</li>
-          </ul>
+              <ul className="list-disc list-inside m-4">
+                Body Measurement
+                <li>Track all your body measurements (bodyweight, bicep size, etc.)</li>
+                <li>Check your progress with charts</li>
+              </ul>
+            </div>
+            <div className="ml-auto mr-auto">
+              <ul className="list-disc list-inside m-4">
+                Calculators
+                <li>Plate loading calculator</li>
+                <li>Calculate your powerlifting competition points (IPF, DOTS, WILKS)</li>
+                <li>Rating of Perceived Exertion (RPE) and 1RM calculator</li>
+              </ul>
+              <ul className="list-disc list-inside m-4">
+                Supported Languages
+                <li>English (US)</li>
+                <li>Portuguese (BR)</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </Content>
       <Footer
