@@ -46,22 +46,23 @@ const IndexPage = () => {
         </div>
         <div className="bg-white p-4 px-7">
           <h2 className="text-2xl text-center mb-4 font-medium">App Functionalities</h2>
-          <p className="text-center mb-4">A simple workout tracker, developed by gym rats, for gym rats!</p>
+          <p className="text-center mb-4">Unlock the power of a user-friendly workout app, created by gym rats for gym rats!</p>
           <div className='grid md:grid-cols-2'>
             <div className="ml-auto mr-auto">
               <ul className="list-disc list-inside m-4">
                 Workout History
                 <li>Record your sets, weight, reps and RPE</li>
                 <li>Use KG or LBS</li>
-                <li>Add custom exercises  </li>
+                <li>Add custom exercises</li>
                 <li>Rest timer</li>
-                <li>Backup system</li>
+                <li>Local backup system</li>
                 <li>Simple design</li>
               </ul>
               <ul className="list-disc list-inside m-4">
-                Body Measurement
-                <li>Track all your body measurements (bodyweight, bicep size, etc.)</li>
-                <li>Check your progress with charts</li>
+                Body Measurement Tracking
+                <li>Monitor all your body measurements (bodyweight, bicep size, etc.)</li>
+                <li>Track your progress with charts</li>
+                <li>Android Widget</li>
               </ul>
             </div>
             <div className="ml-auto mr-auto">
@@ -78,6 +79,7 @@ const IndexPage = () => {
               </ul>
             </div>
           </div>
+          <p className="text-center">Have a suggestion or facing an issue?<br/> Our dedicated team is here to assist you at <b>workoutlogs@gmail.com.</b></p>
         </div>
       </Content>
       <Footer
