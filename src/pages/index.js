@@ -1,7 +1,6 @@
 import * as React from "react"
 import Layout from "../components/layout"
 import Header from "../components/header"
-import { GooglePlayButton } from 'react-mobile-app-button';
 import Footer from "../components/footer";
 import Content from "../components/content";
 import { StaticImage } from "gatsby-plugin-image";
@@ -11,7 +10,7 @@ const TITLE = 'WorkoutLogs - Gym Tracker App';
 const IMAGE = 'https://workoutlogs.github.io/icon.png';
 
 const IndexPage = () => {
-  const GooglePlayUrl = "https://play.google.com/store/apps/details?id=com.reddyyz.WorkoutLogs";
+  const GooglePlayUrl = "https://play.google.com/store/apps/details?id=com.reddyyz.WorkoutLogs&pcampaignid=website";
   const description = 'Download WorkoutLogs app and start tracking your workouts today!'
 
   return (
@@ -24,12 +23,16 @@ const IndexPage = () => {
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="md:mr-8 flex flex-col">
               <h1 className="text-6xl text-left w-64 font-bold">The <br/>Best <br/>Workout <br/>Tracker.</h1>
-              <p className="text-xl mt-5" style={{maxWidth: 450}}>{description}</p>  
-              <GooglePlayButton
-                url={GooglePlayUrl}
-                theme='dark'
-                className='mt-5 self-center md:self-auto'
-              />
+              <p className="text-xl mt-5" style={{maxWidth: 450}}>{description}</p>
+              <a href={GooglePlayUrl} className="mt-5 self-center md:self-auto">
+                {/* <img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/> */}
+                <StaticImage
+                  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                  alt="Get it on Google Play"
+                  placeholder="blurred"
+                  width={215}
+                />
+              </a>
             </div>
           </div>
           <div className='flex-1 flex justify-center md:justify-start mt-8'>
